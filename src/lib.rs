@@ -261,7 +261,7 @@ pub fn load_text_search(db: &sled::Db) {
             synonyms: None,
             stop_words: Some(vec![]),
             ranking_rules: None,
-            attributes_for_faceting: Some(vec![]),
+            filterable_attributes: None,
             distinct_attribute: None,
             searchable_attributes: Some(vec!["ty".into()]),
             displayed_attributes: Some(vec!["orig_ty".into()]),
